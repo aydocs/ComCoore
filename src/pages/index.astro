@@ -1,145 +1,101 @@
 ---
-import Features2 from '~/components/widgets/Features2.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-
 
 const metadata = {
-  title: 'Hakkımda',
+  title: 'Hakkımızda – ComCoor Groups',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero / Kapak Görseli -->
+  <!-- Hero -->
   <Hero
-    tagline="Hakkımda"
+    tagline="ComCoor Groups"
     image={{
       src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Blog Kapak Görseli',
+      alt: 'ComCoor Groups Kapak Görseli',
     }}
   >
     <Fragment slot="title">
-      Merhaba! Ben <span class="text-accent dark:text-white">[Adın]</span> 👋
+      Dijital Dünyada Gücünüz: <span class="text-accent dark:text-white">ComCoor Groups</span> 💡
     </Fragment>
-
     <Fragment slot="subtitle">
-      Kişisel bloguma hoş geldiniz. Bu sayfada kim olduğumu, neler yazdığımı ve neden yazdığımı daha yakından tanıyabilirsiniz.
+      Güvenli, hızlı ve ölçeklenebilir çözümler sunan teknoloji girişimiyiz. Hedefimiz, bireylerin ve işletmelerin dijital dönüşümünde stratejik bir partner olmaktır.
     </Fragment>
   </Hero>
 
-  <!-- Hakkımda Bilgiler -->
-<Stats
-  title="Ben Kimim?"
-  stats={[
-    { title: 'Yazmaya Başladığım Yıl', amount: 2018 },
-    { title: 'Toplam Yazı', amount: 87 },
-    { title: 'Kahve Tüketimi (yılda)', amount: '4.5K+' },
-    { title: 'Takipçi Sayısı', amount: '65K+' },
-  ]}
-/>
-
-  <!-- İlgi Alanları / Yazı Konuları -->
-  <Features3
-    title="Neler Hakkında Yazıyorum?"
-    subtitle="Gündelik yaşamdan teknolojiye, kitaplardan kişisel gelişime kadar birçok alanda içerik üretiyorum."
-    columns={3}
-    isBeforeContent={true}
+  <!-- Hizmet Alanlarımız -->
+  <Features2
+    title="Uzmanlık Alanlarımız"
+    subtitle="İşinizi dijitalde büyütmek için ihtiyaç duyduğunuz tüm çözümler tek çatı altında."
     items={[
       {
-        title: 'Teknoloji',
-        description: 'Yeni araçlar, yazılımlar, internet kültürü ve dijital dünya.',
-        icon: 'tabler:cpu',
+        title: 'SMS ve Mobil Doğrulama',
+        description: 'Güvenli ve hızlı kimlik doğrulama altyapıları.',
+        icon: 'tabler:message-2-check',
       },
       {
-        title: 'Kişisel Gelişim',
-        description: 'Verimli çalışma, alışkanlık oluşturma ve zihinsel sağlık.',
-        icon: 'tabler:book',
+        title: 'Dijital Reklam Optimizasyonu',
+        description: 'Veriye dayalı planlama ve maksimum performans hedefli kampanyalar.',
+        icon: 'tabler:chart-bar',
       },
       {
-        title: 'Yolculuklar',
-        description: 'Gezdiğim yerler ve yol boyunca edindiğim deneyimler.',
-        icon: 'tabler:world',
+        title: 'Sosyal Medya Büyüme Çözümleri',
+        description: 'Takipçi, beğeni, görüntülenme gibi sosyal etkileşim destekleri.',
+        icon: 'tabler:users',
       },
       {
-        title: 'Okuduklarım',
-        description: 'Kitaplar, makaleler, bloglar ve kısa notlar.',
-        icon: 'tabler:library',
-      },
-      {
-        title: 'Yazılım Notları',
-        description: 'Kodlama, yazılım geliştirme ve notlarım.',
-        icon: 'tabler:code',
-      },
-      {
-        title: 'Hayata Dair',
-        description: 'Kimi zaman felsefi, kimi zaman eğlenceli denemeler.',
-        icon: 'tabler:heart',
+        title: 'Stratejik Danışmanlık',
+        description: 'İş hedeflerinize özel analiz ve dijital yol haritası sunarız.',
+        icon: 'tabler:compass',
       },
     ]}
   />
 
-  <!-- Blog Yazma Motivasyonum -->
+  <!-- Değerlerimiz -->
   <Steps2
-    title="Neden Yazıyorum?"
-    subtitle="Yazmak benim için bir ifade, keşif ve paylaşım aracı."
+    title="İşimizi Yapan Değerlerimiz"
+    subtitle="ComCoor Groups olarak her projeye şu ilkelerle yaklaşırız:"
     items={[
       {
-        title: 'Paylaşmak',
-        description: 'Faydalı olduğunu düşündüğüm şeyleri başkalarıyla paylaşmayı seviyorum.',
+        title: 'Güvenilirlik',
+        description: 'Taahhüt ettiğimiz kaliteyi zamanında sunarız.',
       },
       {
-        title: 'Kendimi Geliştirmek',
-        description: 'Yazmak, düşüncelerimi netleştirmeme ve yeni şeyler öğrenmeme yardımcı oluyor.',
+        title: 'Şeffaflık',
+        description: 'İş süreçlerimizde açık iletişim ve dürüst raporlama esasımızdır.',
       },
       {
-        title: 'İz Bırakmak',
-        description: 'Zamanla bir arşiv oluşturmak ve bu arşivin birilerine dokunması beni mutlu ediyor.',
+        title: 'Performans Odaklılık',
+        description: 'Sonuç odaklıyız. Yatırımınızın karşılığını almanız önceliğimizdir.',
       },
     ]}
   />
 
-  <!-- En Yeni Yazılar -->
+  <!-- En Yeni Bloglar -->
   <BlogLatestPosts
-    title="Yeni Yazılar"
-    information={`Teknoloji, yazılım, kitaplar ve daha fazlası hakkında en güncel yazılarımı keşfedin.<br /><br />Fikirlerinizi yorumlarda duymak beni her zaman mutlu eder.`}
+    title="En Yeni İçerikler"
+    information="Teknoloji, dijital pazarlama, girişimcilik ve strateji üzerine hazırladığımız güncel yazılarımıza göz atın."
   />
+
+  <!-- İletişim -->
   <ContactUs
     id="form"
-    title="Bugün bize bir mesaj bırakın!"
-    subtitle="Daha hızlı yanıtlar için SSS bölümümüzü inceleyin. Aradığınız çözümü orada bulabilirsiniz! Bulamazsanız, destek ekibimiz size yardımcı olmaktan mutluluk duyacaktır."
+    title="ComCoor Groups ile İletişime Geçin"
+    subtitle="İş birliği, teklif veya danışmanlık için bizimle iletişime geçin."
     inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Adınız',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'E-posta',
-      },
+      { type: 'text', name: 'name', label: 'Adınız' },
+      { type: 'email', name: 'email', label: 'E-posta' },
     ]}
-    textarea={{
-      label: 'Mesajınız',
-    }}
+    textarea={{ label: 'Mesajınız' }}
     disclaimer={{
       label:
-        'Bu iletişim formunu göndererek kişisel bilgilerinizin toplanmasını kabul etmiş olursunuz.',
+        'Formu göndererek kişisel bilgilerinizin gizlilik politikamız çerçevesinde işlenmesini kabul etmiş olursunuz.',
     }}
-    description="Destek ekibimiz genellikle 24 iş saati içinde yanıt verir."
+    description="Size en kısa sürede dönüş yapmamız için bilgilerinizi eksiksiz doldurun."
   />
 </Layout>
