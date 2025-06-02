@@ -1,6 +1,6 @@
 site:
   name: CCR
-  site: 'https://comcoore.com'
+  site: 'https://ComCoore.com'
   base: '/'
   trailingSlash: false
 
