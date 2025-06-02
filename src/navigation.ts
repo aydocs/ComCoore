@@ -20,6 +20,6 @@ export const footerData = {
     },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://ComCoore.com/">CCR Yazılım</a> · Tüm hakları saklıdır.
+    Made by <a class="text-blue-600 underline dark:text-muted" href="https://ComCoore.com/">ComCoore Yazılım</a> · Tüm hakları saklıdır.
   `,
 };
